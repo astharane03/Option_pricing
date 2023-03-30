@@ -1,0 +1,37 @@
+{% extends 'base.html' %} 
+{% block title %}About{% endblock title %}
+{% block style %}
+.container{
+    background-image: url("/static/8.jpg");
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;  
+    height: 100vh;
+    display: grid;
+    color: black;
+    place-items: left;
+    text-align: left;
+}
+.about_section{
+    margin-top: 100px;
+}
+
+{% endblock style %}
+{% block body %}
+
+<div class="container">
+    <section class="about_section">
+        <h1>Hi!!!</h1>
+        <br><br>
+        <h2>
+            I Astha Rane.<br><br> 2nd Year B.tech student <br>pursuing Mathematics and computing.<br><br>Roll number 210123009<br><br>
+        </h2>
+        <h3> 
+        This project is being made to calculate the option <br>price of a stock with different methods<br>
+        namely two step and n step binomial pricing <br>and black scholes method.
+        </h3>
+        
+    </section>
+</div>
+{% endblock body %}
